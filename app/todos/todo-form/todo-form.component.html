@@ -1,0 +1,4 @@
+<form autocomplete="off" class="todo-form" (ngSubmit)="onSubmit(); todoForm.reset()" #todoForm="ngForm">
+        <input type="text" name="title" [(ngModel)]="title" placeholder="What do you need todo?" required>
+        <button type="submit" [disabled]="todoForm.form.invalid">Add</button>
+</form>
